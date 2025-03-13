@@ -1,0 +1,522 @@
+/* Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: white;
+    padding-top: 80px; /* Prevent content from hiding under navbar */
+}
+
+/* Floating Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Logo Section */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.brand-name {
+    font-family:  'Cinzel Decorative', serif;
+    font-size: 22px; /* Adjusted size */
+    font-weight: bold;
+    color: black;
+}
+
+/* Navigation */
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-left: 30px; /* Moves the links slightly to the right */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* Space between links */
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Permanent Marker', cursive; /* Thin graffiti-style font */
+    color: black;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #555;
+}
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #222, #111);
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+
+
+/* Fleet Container */
+.fleet-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+}
+
+/* Car Card */
+.car-card {
+    width: 330px;
+    height: 460px;
+    perspective: 1000px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.4s ease-in-out;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.car-card:hover {
+    transform: scale(1.05);
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+.car-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.card-front {
+    background-size: cover;
+    background-position: center;
+}
+
+.card-back {
+    background: linear-gradient(135deg, #444, #222);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transform: rotateY(180deg);
+}
+
+.car-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+}
+
+.car-details {
+    font-size: 16px;
+    opacity: 0.9;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+/* New Sky Blue Booking Button */
+.book-btn {
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #00bfff;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.book-btn:hover {
+    background: #00a3e0;
+    color: white;
+}
+
+/* Neon Glow Effect */
+.car-card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0, 191, 255, 0.3);
+}
+
+.car-card:hover {
+    box-shadow: 0px 0px 30px rgba(0, 191, 255, 0.6);
+}
+
+
+
+
+
+
+/* styling the service bars*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Orbitron', sans-serif; 
+            background: #0a0a0a; 
+            color: white; 
+            text-align: center; 
+        }
+
+
+
+         /* 🔥 Section Title Styling */
+         .section-intro {
+            padding: 60px 5%;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .section-title {
+            font-size: 36px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            background: linear-gradient(90deg, #ff007f, #ffcc00, #00ff00, #00ccff, #ff007f);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+
+        .section-desc {
+            font-size: 18px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* 🔥 Fade-in Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 60px 5%;
+        }
+
+        .service-box {
+            background: rgba(20, 20, 20, 0.95);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            width: 320px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 3px solid transparent;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+
+        .service-box:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+            animation: neonGlow 1.5s infinite alternate;
+        }
+
+        @keyframes neonGlow {
+            0% { border-color: #ff007f; box-shadow: 0 0 20px #ff007f; }
+            25% { border-color: #ffcc00; box-shadow: 0 0 20px #ffcc00; }
+            50% { border-color: #00ff00; box-shadow: 0 0 20px #00ff00; }
+            75% { border-color: #00ccff; box-shadow: 0 0 20px #00ccff; }
+            100% { border-color: #ff007f; box-shadow: 0 0 20px #ff007f; }
+        }
+
+        .icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+            animation: iconGlow 2s infinite alternate;
+        }
+
+        @keyframes iconGlow {
+            0% { text-shadow: 0 0 10px #ff007f; }
+            25% { text-shadow: 0 0 10px #ffcc00; }
+            50% { text-shadow: 0 0 10px #00ff00; }
+            75% { text-shadow: 0 0 10px #00ccff; }
+            100% { text-shadow: 0 0 10px #ff007f; }
+        }
+
+        .service-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .service-desc {
+            font-size: 15px;
+            opacity: 0.9;
+        }
+ 
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Orbitron', sans-serif; 
+            background: #0a0a0a; 
+            color: white; 
+            text-align: center; 
+        }
+
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 60px 5%;
+        }
+
+        .service-box {
+            background: rgba(20, 20, 20, 0.95);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            width: 320px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 3px solid transparent;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+
+        .service-box:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+            animation: neonGlow 1.5s infinite alternate;
+        }
+
+        @keyframes neonGlow {
+            0% { border-color: #ff007f; box-shadow: 0 0 20px #ff007f; }
+            25% { border-color: #ffcc00; box-shadow: 0 0 20px #ffcc00; }
+            50% { border-color: #00ff00; box-shadow: 0 0 20px #00ff00; }
+            75% { border-color: #00ccff; box-shadow: 0 0 20px #00ccff; }
+            100% { border-color: #ff007f; box-shadow: 0 0 20px #ff007f; }
+        }
+
+        .icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+            animation: iconGlow 2s infinite alternate;
+        }
+
+        @keyframes iconGlow {
+            0% { text-shadow: 0 0 10px #ff007f; }
+            25% { text-shadow: 0 0 10px #ffcc00; }
+            50% { text-shadow: 0 0 10px #00ff00; }
+            75% { text-shadow: 0 0 10px #00ccff; }
+            100% { text-shadow: 0 0 10px #ff007f; }
+        }
+
+        .service-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .service-desc {
+            font-size: 15px;
+            opacity: 0.9;
+        }
+
+
+
+
+
+
+
+
+
+
+
+        /* payment styling*/
+
+      
+
+
+
+
+
+
+
+/* Footer Styles */
+.footer {
+    background: linear-gradient(to right, #0d0d0d, #1c1c1c);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.footer-logo {
+    width: 120px;
+    margin-bottom: 15px;
+}
+
+.footer-about p {
+    font-size: 14px;
+    color: #ddd;
+}
+
+.footer-links, .footer-social, .footer-contact {
+    margin: 20px;
+}
+
+.footer-links h3, .footer-social h3, .footer-contact h3 {
+    color: #f5a623;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 8px 0;
+}
+
+.footer-links a {
+    color: #f5a623;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Social Media Icons */
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.3);
+}
+
+/* Contact */
+.footer-contact p {
+    font-size: 14px;
+    color: #ddd;
+}
+
+.chat-btn {
+    display: inline-block;
+    background: #f5a623;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.chat-btn:hover {
+    background: white;
+    color: #f5a623;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    background: #111;
+    padding: 15px 0;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ddd;
+}

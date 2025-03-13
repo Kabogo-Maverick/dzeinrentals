@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='contact.css'>
+    <script src='main.js'></script>
+
+     <!-- Google Fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+     <link href="https://fonts.cdnfonts.com/css/kingsguard-calligraphy" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <main>
+    
+
+
+    <!-- Floating Header -->
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="dr.jpeg" alt="Dzein Rentals Logo" class="logo">
+            <h1 class="brand-name">DZEIN RENTALS</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fleet.html">Fleet</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <div class="container">
+        <h1>Contact Dzein Rentals</h1>
+
+        <div class="section contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Phone:</strong> <a href="tel:+254700123456">+254 700 123 456</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@dzeinrentals.com">info@dzeinrentals.com</a></p>
+            <p><strong>Head Office:</strong> Nairobi, Kenya</p>
+            <div class="animated-border"></div>
+        </div>
+
+        <div class="section business-hours">
+            <h2>Business Hours</h2>
+            <p>Monday - Friday: 8 AM - 8 PM</p>
+            <p>Saturday: 9 AM - 6 PM</p>
+            <p>Sunday: Closed</p>
+            <div class="animated-border"></div>
+        </div>
+
+        <div class="section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq">
+                <button onclick="toggleFAQ(0)">How do I book a rental?</button>
+                <div class="faq-content">Bookings can be made via our website, phone, or in-person at our office.</div>
+
+                <button onclick="toggleFAQ(1)">What payment methods do you accept?</button>
+                <div class="faq-content">We accept M-Pesa, credit/debit cards, and cash.</div>
+
+                <button onclick="toggleFAQ(2)">Do you offer chauffeur services?</button>
+                <div class="faq-content">Yes, we provide professional chauffeurs upon request.</div>
+
+                <button onclick="toggleFAQ(3)">What happens if the car breaks down?</button>
+                <div class="faq-content">We offer 24/7 roadside assistance and an immediate replacement vehicle.</div>
+            </div>
+            <div class="animated-border"></div>
+        </div>
+
+        <div class="section">
+            <h2>Send Us a Message</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="animated-border"></div>
+        </div>
+
+        <div class="section">
+            <h2>Social Media Links</h2>
+            <div class="social-links">
+                <a href="#">WhatsApp</a>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+            <div class="animated-border"></div>
+        </div>
+
+        <div class="section">
+            <h2>Terms & Privacy Policy</h2>
+            <p><strong>Rental Agreement:</strong> By renting a vehicle from Dzein Rentals, you agree to our terms, including deposit requirements and return conditions.</p>
+            <p><strong>Insurance & Liability:</strong> All rentals are covered by comprehensive insurance. Clients are responsible for excess fees in case of an accident.</p>
+            <p><strong>Data Privacy:</strong> Your personal data is securely stored and will never be shared with third parties without consent.</p>
+            <p><strong>Cancellation Policy:</strong> Cancellations made 48 hours before the rental start are eligible for a full refund.</p>
+            <div class="animated-border"></div>
+        </div>
+
+    </div>
+
+    <script>
+        function toggleFAQ(index) {
+            let contents = document.querySelectorAll(".faq-content");
+            contents[index].style.display = contents[index].style.display === "block" ? "none" : "block";
+        }
+    </script>
+
+    
+</body>
+</html>
